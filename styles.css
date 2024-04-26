@@ -105,7 +105,7 @@ h3 {
   background: var(--clr-dark);
   color: var(--clr-light);
   max-height: 340px;
-  transform: translateX(0%);
+  transform: translateX(100%);
 }
 
 .nav__list {
@@ -149,11 +149,11 @@ h3 {
   width: 70%;
 }
 
-/* .nav__link--transition,
+.nav__link--transition,
 .nav__link--transition::before,
 .nav__link--transition::after  {
   transition: 0.5s;
-} */
+}
 
 @media (min-width: 600px) {
   .nav-toggle {
