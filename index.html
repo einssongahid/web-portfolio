@@ -18,11 +18,13 @@
           <a href="#home"><img src="img/es-black.png" alt="" class="logo__img"></a>
         </div>
 
-        <button class="nav-toggle">
-          <span class="hamburger"></span>
-        </button>
+        <div class="nav__toggle">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
 
-        <div class="nav__main">
+        <div id="nav__main" class="nav__main">
           <ul class="nav__list">
             <li class="nav__item"><a href="#home" class="nav__link nav__link--transition">Home</a></li>
             <li class="nav__item"><a href="#about" class="nav__link nav__link--transition">About</a></li>
@@ -71,62 +73,93 @@
     <!-- Project Section -->
     <section class="my-projects" id="projects">
       <h2 class="section__title">Projects</h2>
+      <p class="section__subtitle section__subtitle--about-me">Lorem ipsum dolor sit amet, consectetur.</p>
 
-      <div class="projects__content">
+      <div class="projects__content line">
         <!-- Project #1 -->
-        <div class="project">
-          <a href="#" class="project__link">
-            <img src="coming-soon-2579123_1280.jpg" alt="" class="project__img">
-            <p class="project__title">Project Sample 1</p>
-          </a>
-        </div>
+        <figure class="project">
+          <img src="img/coming-soon.jpg" alt="" class="project__img">
+          <figcaption class="project__caption">
+            <p class="project__title">Project #1</p>
+            <a href="#" class="project__link project__link--button">
+              <span>Visit Website</span>
+              <span><i class="fa-solid fa-chevron-right"></i></span>
+            </a>
+          </figcaption>
+          <div class="project__overlay"></div>
+        </figure>
 
         <!-- Project #2 -->
-        <div class="project">
-          <a href="#" class="project__link">
-            <img src="coming-soon-2579123_1280.jpg" alt="" class="project__img">
-            <p class="project__title">Project Sample 2</p>
-          </a>
-        </div>
+        <figure class="project">
+          <img src="img/coming-soon.jpg" alt="" class="project__img">
+          <figcaption class="project__caption">
+            <p class="project__title">Project #2</p>
+            <a href="#" class="project__link project__link--button">
+              <span>Visit Website</span>
+              <span><i class="fa-solid fa-chevron-right"></i></span>
+            </a>
+          </figcaption>
+          <div class="project__overlay"></div>
+        </figure>
 
         <!-- Project #3 -->
-        <div class="project">
-          <a href="#" class="project__link">
-            <img src="coming-soon-2579123_1280.jpg" alt="" class="project__img">
-            <p class="project__title">Project Sample 3</p>
-          </a>
-        </div>
+        <figure class="project">
+          <img src="img/coming-soon.jpg" alt="" class="project__img">
+          <figcaption class="project__caption">
+            <p class="project__title">Project #3</p>
+            <a href="#" class="project__link project__link--button">
+              <span>Visit Website</span>
+              <span><i class="fa-solid fa-chevron-right"></i></span>
+            </a>
+          </figcaption>
+          <div class="project__overlay"></div>
+        </figure>
 
         <!-- Project #4 -->
-        <div class="project">
-          <a href="#" class="project__link">
-            <img src="coming-soon-2579123_1280.jpg" alt="" class="project__img">
-            <p class="project__title">Project Sample 4</p>
-          </a>
-        </div>
+        <figure class="project">
+          <img src="img/coming-soon.jpg" alt="" class="project__img">
+          <figcaption class="project__caption">
+            <p class="project__title">Project #4</p>
+            <a href="#" class="project__link project__link--button">
+              <span>Visit Website</span>
+              <span><i class="fa-solid fa-chevron-right"></i></span>
+            </a>
+          </figcaption>
+          <div class="project__overlay"></div>
+        </figure>
 
         <!-- Project #5 -->
-        <div class="project">
-          <a href="#" class="project__link">
-            <img src="coming-soon-2579123_1280.jpg" alt="" class="project__img">
-            <p class="project__title">Project Sample 5</p>
-          </a>
-        </div>
+        <figure class="project">
+          <img src="img/coming-soon.jpg" alt="" class="project__img">
+          <figcaption class="project__caption">
+            <p class="project__title">Project #5</p>
+            <a href="#" class="project__link project__link--button">
+              <span>Visit Website</span>
+              <span><i class="fa-solid fa-chevron-right"></i></span>
+            </a>
+          </figcaption>
+          <div class="project__overlay"></div>
+        </figure>
 
         <!-- Project #6 -->
-        <div class="project">
-          <a href="#" class="project__link">
-            <img src="coming-soon-2579123_1280.jpg" alt="" class="project__img">
-            <p class="project__title">Project Sample 6</p>
-          </a>
-        </div>
-
-      </div>
+        <figure class="project">
+          <img src="img/coming-soon.jpg" alt="" class="project__img">
+          <figcaption class="project__caption">
+            <p class="project__title">Project #6</p>
+            <a href="#" class="project__link project__link--button">
+              <span>Visit Website</span>
+              <span><i class="fa-solid fa-chevron-right"></i></span>
+            </a>
+          </figcaption>
+          <div class="project__overlay"></div>
+        </figure>
     </section>
 
     <!-- Contact Section -->
     <section class="contact-info" id="contacts">
       <h2 class="section__title">Contacts</h2>
+      <p class="section__subtitle section__subtitle--about-me">Lorem ipsum dolor sit amet, consectetur.</p>
+      
       <a href="mailto:songahid.eins@gmail.com"></a>
     </section>
 
@@ -143,5 +176,19 @@
         <p>Copyright © 2024 <span class="footer__name">Eins Songahid</span></p>
       </div>
     </footer> 
+
+
+    <!-- <script>
+      function myFunction() {
+        var x = document.getElementById("nav__main");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script> -->
+
+
   </body>
 </html> 
